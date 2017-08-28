@@ -196,9 +196,10 @@ function buildBook(msg, BOOK, ctype) {
 
 connect();
 setInterval(function () {
-    console.log(JSON.stringify(result, null, 4));
     if (connected) {
         return;
     }
     connect()
 }, 2500)
+
+module.exports = result;
